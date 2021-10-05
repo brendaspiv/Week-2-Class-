@@ -1,0 +1,28 @@
+#poster {
+  background-color: rgb(245, 93, 38);
+  width: 500px;
+  height: 600px;
+}
+h1 {
+  font-family: fantasy;
+}
+.text--big {
+  font-size: 40px;
+}
+.text--bright {
+  color: rgb(231, 231, 37);
+}
+#text--bottom {
+  margin-bottom: -50px;
+  margin-left: 20px;
+}
+.text--bright .text-bottom {
+  margin-left: 300px;
+  margin-bottom: 500px;
+}
+.float-container img {
+  width: 300px;
+  float: left;
+  margin: 0 1rem 1rem 0;
+  margin-left: 100px;
+}
