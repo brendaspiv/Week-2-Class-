@@ -1,27 +1,86 @@
-* {
-  box-sizing: border-box;
+*{
+    box-sizing: border-box;
 }
-.container {
-  border: 10px solid rgb(109, 109, 224);
-  margin: 2rem;
-  padding: 2rem;
-  width: 400px;
-  height: 500px;
-  background-color: rgb(155, 155, 228);
-  display: flex;
-  flex-direction: column;
+
+.c1{
+    fill:rgb(185, 222, 247);
+    opacity: 0.5;
 }
-p {
-  font-family: "Times New Roman", Times, serif;
-  color: rgba(255, 255, 255, 0.849);
-  font-size: 180px;
-  margin-left: 35px;
-  margin-top: -15px;
+.c1:hover{
+    opacity: 1;
 }
-hr {
-  text-align: center;
-  width: 100%;
-  background-color: white;
-  color: white;
-  margin-top: -150px;
+.c1:active{
+    filter:url(#blur);
 }
+.container{
+    margin: 2rem;
+    padding: 2rem;
+    width: 100%;
+    height:100%;
+    background-color: rgb(132, 132, 221);
+    border: 10px solid rgb(97, 166, 223);
+    display:flex;
+    flex-direction: column;
+}
+/* .shape{
+    width:200px;
+    height:25px;
+    border-radius:5px;
+    margin-bottom:1px;
+    background-color:white;
+    justify-content: center;
+    margin-left: 400px;
+} */
+h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:100px;
+    color:rgb(173, 237, 240);
+    justify-content: center;
+    margin-left: 440px;
+}
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color:rgb(173, 237, 240);
+    justify-content: center;
+    margin-left:425px;
+}
+hr{
+    width:500px;
+    display: flex;
+}
+#navbar{
+     top:0px;
+    position:absolute;
+    left:0px;
+    width:100%;
+    background-color: rgb(145, 206, 241);
+}
+
+nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+  }
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  footer {
+    background-color: #7ab3e9;
+    color: white;
+    padding: 0.5em;
+  }
+  button {
+    background-color: white;
+    margin-left:440px;
+  }
+/* #left{
+    float:left;
+    width:50%;
+}  
+#right{
+    float:right;
+    width:40%;
+} */
+
+
