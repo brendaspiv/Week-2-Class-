@@ -1,30 +1,15 @@
-// let button = document.getElementById("button");
-// console.log(button);
+const btn1 = document.getElementById("btn1");
+const btn2 = document.getElementById("btn2");
+const container = document.getElementById("container");
 
-// let slider = document.getElementById("slider");
-// console.log(slider);
-// let sliderValue = document.getElementById("slider-value");
+const dramaImgArray = ["maid2.jpg", "static.jpg"];
 
-// function updateSlider() {
-//   console.log("yes it reads me");
-//   let value = slider.value;
-//   console.log(value);
-//   sliderValue.innerHTML = `<p>${value}</p>`;
-//   sliderValue.style.fontSize = `${value}px`;
-//   sliderValue.style.border = `${value / 3}px solid rgb(${value / 2 + 20},${
-//     value / 5 + 50
-//   },${value})`;
-// }
-// slider.addEventListener("input", updateSlider);
-
-function changeColor() {
-  let red = document.getElementById(`rangeRed`).value;
-  let green = document.getElementById(`rangeGreen`).value;
-  let blue = document.getElementById(`rangeBlue`).value;
-  let color = `rgb(` + red + `,` + green + `,` + blue + `)`;
-  document.body.style.backgroundColor = color;
-  document.getElementById(`colorOutput`).innerHTML = `:` + color;
+function changeDramaImg() {
+  const randomItemFromArray = Math.floor(Math.random() * dramaImgArray.length);
+  //document.body.style.backgroundImage = "url('maid2.jpg')";
+  container.style.backgroundImage = `url("maid2.jpg")`; // `url(${dramaImgArray[0].thumbnail})`;
+  // name.innerHTML = dramaImgArray[randomItemFromArray].name;]
+  console.log("changeDramaImg executed");
 }
-document.getElementById(`rangeRed`).addEventListener(`input`, changeColor);
-document.getElementById(`rangeGreen`).addEventListener(`input`, changeColor);
-document.getElementById(`rangeBlue`).addEventListener(`input`, changeColor);
+// document.addEventListener("DOMContentLoaded", changeBackgroundImage());
+btn1.addEventListener("click", changeDramaImg);

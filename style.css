@@ -3,6 +3,7 @@
   font-family: "Courier New", Courier, monospace;
   letter-spacing: 4px;
   background-color: black;
+  /* background-image: url("cat.jpg"); */
 }
 .container {
   display: flex;
@@ -12,7 +13,11 @@
   text-align: center;
   min-height: 100vh;
 }
-.btn-1 {
+/* body {
+  background-image: url("maid2.jpg");
+  background-color: #cccccc;
+} */
+#btn1 {
   width: 300px;
   height: 100px;
   border: none;
@@ -24,12 +29,12 @@
   font-size: 2rem;
   outline: none;
 }
-.btn-1:hover {
+#btn1:hover {
   box-shadow: inset 300px 0 0 0 #f9e506;
   cursor: pointer;
   color: #000;
 }
-.btn-2 {
+#btn2 {
   width: 300px;
   height: 100px;
   border: none;
@@ -42,11 +47,11 @@
   position: relative;
   z-index: 1;
 }
-.btn-2:hover {
+#btn2:hover {
   color: #fff;
   cursor: pointer;
 }
-.btn-2:before {
+#btn2:before {
   transition: 0.5s all ease;
   position: absolute;
   top: 0;
@@ -57,10 +62,15 @@
   content: "";
   background-color: #42fbf2;
 }
-.btn-2:hover:before {
+#btn2:hover:before {
   transition: 0.5s all ease;
   left: 0;
   right: 0;
   opacity: 1;
   z-index: -1;
+}
+img {
+  display: block;
+  width: 250px;
+  margin: auto;
 }
