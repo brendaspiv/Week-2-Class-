@@ -1,28 +1,23 @@
-const drama_btn = document.getElementById("drama_btn");
-// const comedy_btn = document.getElementById("comedy_btn");
-// const container = document.getElementById("container");
+let drama_btn = document.querySelector("#drama_btn");
+let comdey_btn = document.querySelector("#comedy_btn");
+let thriller_btn = document.querySelector("#thriller_btn");
+let christmas_btn = document.querySelector("#christmas_btn");
 
-// const dramaImgArray = ["maid2.jpg", "static.jpg", "cat.jpg"];
+// const dramaImgArray = ["handmaid.jpeg", "maisel.jpeg", "soho.jpeg"];
 
-// const imageSrcArray = ["maid2.jpg", "static.jpg", "cat.jpg"];
+drama_btn.addEventListener("click", () => {
+  document.body.style.backgroundImage = "url(handmaid.jpeg)";
+});
+comedy_btn.addEventListener("click", () => {
+  document.body.style.backgroundImage = "url(maisel.jpeg)";
+});
+thriller_btn.addEventListener("click", () => {
+  document.body.style.backgroundImage = "url(soho.jpeg)";
+});
+christmas_btn.addEventListener("click", () => {
+  document.body.style.backgroundImage = "url(grinch.jpeg)";
+});
 
 // function changeDramaImg() {
-//   const randomItemFromArray = Math.floor(Math.random() * dramaImgArray.length);
-//   //document.body.style.backgroundImage = "url('maid2.jpg')";
-//   container.style.backgroundImage = `url("maid2.jpg")`; // `url(${dramaImgArray[0].thumbnail})`;
-//   // name.innerHTML = dramaImgArray[randomItemFromArray].name;]
-//   console.log("changeDramaImg executed");
+//   drama_btn.addEventListener("click", changeDramaImg);
 // }
-// // document.addEventListener("DOMContentLoaded", changeBackgroundImage());
-// drama_btn.addEventListener("click", () => {
-//   document.body.style.backgroundImage = ("click", imageSrcArray);
-// });
-// //  changeDramaImg);
-const imgPathArray = ["maid2.jpg", "cat.jpg", "static.jpg"];
-function changeImg() {
-  const randomImg = Math.floor(Math.random() * imgPathArray.length);
-
-  container.style.backgroundImage = `url(${randomImg})`;
-}
-
-drama_btn.addEventListner("click", changeImg);

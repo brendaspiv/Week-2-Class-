@@ -1,8 +1,47 @@
-* {
-  box-sizing: border-box;
-  font-family: "Courier New", Courier, monospace;
-  letter-spacing: 4px;
-  /* background-image: url("cat.jpg"); */
+body {
+  background-repeat: no-repeat;
+  background-image: url("tvstatic.jpeg");
+  background-size: cover;
+  opacity: 0;
+  transition: 3s;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+button {
+  height: 50px;
+  width: 100px;
+  margin: 10px;
+}
+#drama_btn {
+  color: black;
+  background-color: darkgrey;
+}
+#comedy_btn {
+  color: yellow;
+  background-color: plum;
+}
+#thriller_btn {
+  color: salmon;
+  background-color: seagreen;
+}
+#christmas_btn {
+  color: springgreen;
+  background-color: maroon;
 }
 #container {
   display: flex;
@@ -12,64 +51,7 @@
   text-align: center;
   min-height: 100vh;
 }
-/* body {
-  background-image: url("maid2.jpg");
-  background-color: #cccccc;
-} */
-#drama_btn {
-  width: 300px;
-  height: 100px;
-  border: none;
-  color: white;
-  background-color: rgb(255, 0, 68);
-  border-radius: 4px;
-  box-shadow: inset 0 0 0 0 #f9e506;
-  transition: ease-out 0.3s;
-  font-size: 2rem;
-  outline: none;
-}
-#drama_btn:hover {
-  box-shadow: inset 300px 0 0 0 #f9e506;
-  cursor: pointer;
-  color: #000;
-}
-#comedy_btn {
-  width: 300px;
-  height: 100px;
-  border: none;
-  color: white;
-  border-radius: 4px;
-  transition: ease-out 0.3s;
-  font-size: 2rem;
-  outline: none;
-  border: 3px solid #42fbf2;
-  position: relative;
-  z-index: 1;
-}
-#comedy_btn:hover {
-  color: #fff;
-  cursor: pointer;
-}
-#comedy_btn:before {
-  transition: 0.5s all ease;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  opacity: 0;
-  content: "";
-  background-color: #42fbf2;
-}
-#comedy_btn:hover:before {
-  transition: 0.5s all ease;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  z-index: -1;
-}
 img {
-  display: block;
-  width: 250px;
-  margin: auto;
+  width: 500px;
+  height: 500px;
 }
